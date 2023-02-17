@@ -1,38 +1,309 @@
-.App {
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Wawati SC";
+}
+
+li {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+ul {
+  padding-left: 0;
+}
+
+header {
+  width: 100vw;
+  height: 270px;
+  display: flex;
+}
+
+header .head {
+  width: 30%;
+  text-align: center;
+  margin: auto;
+}
+
+header nav {
+  display: flex;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+header nav .nav-list {
+  display: flex;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+header nav .nav-list .nav-list-item {
+  list-style: none;
+  margin: auto;
+}
+
+header nav .nav-list #li-about:hover {
+  color: blue;
+  font-size: 160%;
+}
+
+header nav .nav-list #li-works:hover {
+  color: blue;
+  font-size: 160%;
+}
+
+header nav .nav-list #li-news:hover {
+  color: blue;
+  font-size: 160%;
+}
+
+header nav .nav-list #li-contact:hover {
+  color: blue;
+  font-size: 160%;
+}
+
+.main .mainvisual {
+  margin-bottom: 80px;
+  font-size: 160px;
+}
+
+.main #mainvisual img {
+  width: 100%;
+  /* max-width: 1920px; */
+  max-height: 420px;
+  /* 横に広げたりしない */
+  object-fit: cover;
+}
+
+.main .animetion_head {
+  background-color: black;
+  height: 500px;
+}
+
+.main .animetion_head .aiueo {
+  margin-left: 70%;
+  color: aquamarine;
+}
+
+.main .animetion_head .infometion {
+  background-color: black;
+  height: 90%;
+  width: 40%;
+}
+
+.main .animetion_head .infometion #circle {
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.main .animetion_head .infometion #circle .info {
+  position: absolute;
+}
+
+.main .animetion_head .infometion #circle .one {
+  top: 45%;
+  right: 0%;
+}
+
+.main .animetion_head .infometion #circle .two {
+  top: 0%;
+  right: 40%;
+}
+
+.main .animetion_head .infometion #circle .three {
+  top: 45%;
+  right: 82%;
+}
+
+.main .animetion_head .infometion #circle .four {
+  top: 90%;
+  right: 35%;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 10% 10% 10%;
+}
+
+.wrapper h2 {
+  font-size: 1.5rem;
+  font-family: "Wawati SC";
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/* about */
+.about {
+  padding: 0;
+}
+
+.about ul {
+  padding: 0px;
+}
+
+.about ul .about-li {
+  margin-bottom: 10px;
+}
+
+/* works */
+#works ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+#works li {
+  width: 30%;
+  margin-bottom: 23px;
+}
+
+#works .img-item {
+  width: 100%;
+}
+
+/* news */
+#news dl {
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#news dl div {
+  /* border-bottom: dashed 1px #333333; */
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+#news .first-div {
+  border-top: 1px solid black;
+}
+
+#news dt {
+  float: left;
+  clear: left;
+}
+
+#news dd {
+  float: left;
+  margin-left: 1em;
+}
+
+#contact div {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+#contact #userName {
+  height: 20px;
+  width: 100%;
+}
+
+#contact #email {
+  height: 20px;
+  width: 100%;
+}
+
+#contact #message {
+  width: 100%;
+}
+
+#contact #contact-button {
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 100px;
+}
+
+@media screen and (min-width: 791px) {
+  #contact label {
+    width: 10%;
+  }
+
+  #contact #userName {
+    margin-left: 15%;
+  }
+
+  #contact #email {
+    margin-left: 15%;
+  }
+
+  #contact #message {
+    margin-left: 15%;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #757272;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer footer p {
+  color: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 791px) {
+  header {
+    width: 100%;
+    height: auto;
+    display: block;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  header .head {
+    width: 100%;
+    line-height: 70px;
   }
-  to {
-    transform: rotate(360deg);
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav .nav-list {
+    width: 70%;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .wrapper {
+    margin: 10%;
+  }
+
+  #works ul li {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  #works ul li .img-item {
+    width: 100%;
+  }
+
+  #contact div {
+    display: block;
+    width: 100%;
+  }
+
+  #contact div #email {
+    width: 100%;
+  }
+
+  #contact div #email #userName {
+    height: 20px;
+    width: 100%;
   }
 }
