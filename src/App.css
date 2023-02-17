@@ -84,24 +84,23 @@ header nav .nav-list #li-contact:hover {
   height: 500px;
 }
 
-.main .animetion_head .aiueo {
-  margin-left: 70%;
-  color: aquamarine;
-}
-
 .main .animetion_head .infometion {
   background-color: black;
   height: 90%;
-  width: 40%;
+  width: 60%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main .animetion_head .infometion #circle {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 80%;
+
   background: #ccc;
   border-radius: 50%;
-  transform: rotate(0deg);
-  transition: 1s;
+  transform: rotate(90deg);
+  /* transition: 1s; */
 }
 
 .main .animetion_head .infometion #circle .info {

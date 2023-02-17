@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+var circle = document.getElementById('circle');
+var btn = document.getElementById('btn');
+
 window.onload = function () {
   document.querySelector('#li-about').addEventListener('click', function () {
     const aboutSection = document.querySelector('#about');
@@ -43,11 +47,7 @@ root.render(
       <script src="./src/index.js"></script>
       <title>my-work</title>
     </head>
-    <App />
+    <App/>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

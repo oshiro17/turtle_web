@@ -1,92 +1,63 @@
 import './App.css';
 import turtle from './download.svg';
+import Header from './components/head';
+import About from './components/about';
 
 function App() {
   return (
     <body>
-      <header>
-        <h1 class="head">
-          <a>My Work</a>
-        </h1>
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-list-item" id="li-about">about</li>
-            <li class="nav-list-item" id="li-works">Works</li>
-            <li class="nav-list-item" id="li-news">News</li>
-            <li class="nav-list-item" id="li-contact">contact</li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main">
+      <Header />
+      <main className="main">
         <div id="mainvisual">
-          <img src={turtle} class="mainvisual" />
+          <img src={turtle} className="mainvisual" />
         </div>
-        <div class="animetion_head">
-          <div class="aiueo">aiueo</div>
-          <div class="infometion">
+        <div className="animetion_head">
+          <div className="infometion">
             <div id="circle">
-              <div class="info one">
+              <div className="info one">
                 <h1>safe</h1>
               </div>
-              <div class="info two">
+              <div className="info two">
                 <h1>cheap</h1>
               </div>
-              <div class="info three">
+              <div className="info three">
                 <h1>servis</h1>
               </div>
-              <div class="info four">
+              <div className="info four">
                 <h1>you can</h1>
               </div>
             </div>
           </div>
         </div>
-        <div id="about" class="wrapper">
-          <h2>About</h2>
-          <ul>
-            <li class = "about-li">Xxxx Ashely</li>
-            <li class = "about-li">
-              <p>2th Floore XXXXX building so hight tokyo newyork okinawa XXXX</p>
-              <p>tel : 080-0000-0000</p>
-              <p>url : XXXXXXXXXXXXXXXXXXXXXXXX</p>
-              <p>main : YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY</p>
-            </li>
-            <li class = "about-li">
-              大森さんののを自分のこれを時々お病気と恐れ入りて私腹にお随行からさように
-              そのうちご病気へしたたて、
-              始めてとうとう発展に知れたいからいけでしょものに込み入っずた。
-              けれどもだからご弊害をしのはあいにく不愉快と犯さですて、
-              この手数へもならだからという奥底へ解せば行くべくなけれ。
-            </li>
-          </ul>
-        </div>
-        <div id="works" class="wrapper">
+       <About/>
+        <div id="works" className="wrapper">
           <h2>Works</h2>
           <ul>
             <li>
-              <img src={turtle} class="img-item" />
+              <img src={turtle} className="img-item" />
             </li>
             <li>
-              <img src={turtle} class="img-item" />
+              <img src={turtle} className="img-item" />
             </li>
             <li>
-              <img src={turtle} class="img-item" />
+              <img src={turtle} className="img-item" />
             </li>
             <li>
-              <img src={turtle} class="img-item" />
+              <img src={turtle} className="img-item" />
             </li>
             <li>
-              <img src={turtle} class="img-item" />
+              <img src={turtle} className="img-item" />
             </li>
             <li>
-              <img src={turtle} class="img-item" />
+              <img src={turtle} className="img-item" />
             </li>
 
           </ul>
         </div>
-        <div id="news" class="wrapper">
+        <div id="news" className="wrapper">
           <h2>News</h2>
           <dl>
-            <div class="first-div">
+            <div className="first-div">
               <dt>10XX年</dt>
               <dd>雑誌から賞をもらいました。</dd>
             </div>
@@ -116,7 +87,7 @@ function App() {
             </div>
           </dl>
         </div>
-        <div id="contact" class="wrapper">
+        <div id="contact" className="wrapper">
           <h2>Contact</h2>
           <form action="">
             <dl>
