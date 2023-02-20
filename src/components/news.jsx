@@ -1,12 +1,14 @@
 import React from "react";
 
-function News(){
-    return (
+const animals = ["inu", "neko", "kuzira"];
+const News = () => {
+  const animal_list = animals.map((animal) => <dt>{animal}</dt>)
+  return (
     <div id="news" className="wrapper">
       <h2>News</h2>
       <dl>
         <div className="first-div">
-          <dt>10XX年</dt>
+        {animal_list}
           <dd>雑誌から賞をもらいました。</dd>
         </div>
         <div>
