@@ -1,5 +1,6 @@
 import React from 'react';
 
+const images = []
 function Header() {
   return (
     <header>
