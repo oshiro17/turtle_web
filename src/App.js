@@ -1,10 +1,10 @@
 import './App.css';
-import turtle from './download.svg';
+// import turtle from './download.svg';
 import Header from './components/head';
 import Main from './components/mainvisual';
 import Footer from './components/footer'
 
-function App() {
+const  App=() =>{
   return (
     <body>
       <Header/>

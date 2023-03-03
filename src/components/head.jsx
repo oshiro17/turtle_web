@@ -1,12 +1,9 @@
 import React from 'react';
 
-const images = []
-function Header() {
+const Header =() =>{
   return (
     <header>
-      <h1 className="head">
-        <a>My Work</a>
-      </h1>
+      <h1 className="head">My Work</h1>
       <nav>
         <ul className="nav-list">
           <li className="nav-list-item" id="li-about">about</li>

@@ -14,7 +14,6 @@ const News = () => {
         }
       </dl>
     </div >
-
   )
 }
 export default News;

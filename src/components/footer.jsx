@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer(){
+const Footer = () => {
     return (
         <footer id="footer">
         <p>&copy; 2020 My Work</p>
