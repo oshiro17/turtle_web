@@ -6,14 +6,12 @@ const image = images.map((image) =>
 <li>
   <img src={image} alt="" className="img-item" />
 </li>)
-const Works = () => {
-  return (
+
+const Works =
   <div id="works" className="wrapper">
     <h2>Works</h2>
     <ul>
       {image}
     </ul>
   </div>
-  )
-}
   export default Works;

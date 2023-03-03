@@ -6,11 +6,10 @@ import Works from './works';
 import News from './news';
 
 
-const Main = () => {
-  return (
-    <main className="main">
+const Main =
+  <main className="main">
     <div id="mainvisual">
-      <img src={turtle} className="mainvisual" alt="説明的なテキスト"/>
+      <img src={turtle} className="mainvisual" alt="説明的なテキスト" />
     </div>
     {/* <div className="animetion_head">
       <div className="infometion">
@@ -30,12 +29,9 @@ const Main = () => {
         </div>
       </div> 
     </div>*/}
-   <About/>
-   <Works/>
-   <News/>
-   <Contact/>
+    <About />
+    <Works />
+    <News />
+    <Contact />
   </main>
-    )
-
-}
 export default Main;
