@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-var circle = document.getElementById('circle');
-var btn = document.getElementById('btn');
+// var circle = document.getElementById('circle');
+// var btn = document.getElementById('btn');
 
 window.onload = function () {
   document.querySelector('#li-about').addEventListener('click', function () {
@@ -34,6 +34,7 @@ window.onload = function () {
     }
   });
 }
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
